@@ -37,8 +37,8 @@ function! s:select_a()
 
         if start_column - 2 <= word_start ||
          \ getline(start_line)[:start_column - 2] =~# '^_*$'
-            call setpos('.', end_position)
-            normal! l~
+            " call setpos('.', end_position)
+            " normal! l~
         endif
     endif
 
